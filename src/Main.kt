@@ -26,13 +26,13 @@ fun main() {
     */
 
     fun question() {
-        print("გსურთ პროგრამის ხელახლა დაწყება <Y/N>?: ")
+        print("Do you want to restart the program <Y/N>?: ")
         val answer: String = readLine().toString().lowercase()
 
         if (answer == "y"){
             return main()
         }else if (answer != "n"){
-            println("შეიყვანეთ Y ან N:")
+            println("Invalid input. Enter Y or N")
             return question()
         }
     }
